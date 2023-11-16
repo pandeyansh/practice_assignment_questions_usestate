@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Counter from "./components/Counter";
+import InputValidation from "./components/InputValidation";
+import ToDoList from "./components/ToDoList";
+import ToogleComponent from "./components/ToogleComponent";
+import UserRegistration from "./components/UserRegistration";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Counter />
+     <ToogleComponent />
+     <ToDoList />
+     <InputValidation />
+     <UserRegistration />
     </div>
   );
 }
-
 export default App;
